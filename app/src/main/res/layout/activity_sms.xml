@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SMSActivity">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Number"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_primaryColor="#1992ef"
+        app:met_errorColor="#f22a37"
+        app:met_singleLineEllipsis="true"
+        app:met_floatingLabel="highlight"
+        android:layout_marginTop="50dp"
+        android:inputType="number"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Message"
+        app:met_baseColor="#000"
+        app:met_primaryColor="#000"
+        app:met_errorColor="#f22a37"
+        app:met_singleLineEllipsis="true"
+        app:met_floatingLabel="highlight"
+        android:lines="10"
+        android:gravity="top|left"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/txtnumber"/>
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/btnintent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Intent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

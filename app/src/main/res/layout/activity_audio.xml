@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AudioActivity">
+
+    <Button
+        android:id="@+id/btnring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ring"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnvibrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="vibrate"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnring"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnsilent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="silent"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_below="@id/btnvibrate"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>
